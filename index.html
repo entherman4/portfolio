@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Abhinav Ajay | Computer Science Student and Software Engineer, UMBC</title>
+<meta name="description" content="Portfolio of Abhinav Ajay, a UMBC computer science student building real time systems: ParkSmart UMBC, a secure MQTT broker for IoT, and the Sikho AI Hindi tutor.">
+<meta property="og:title" content="Abhinav Ajay, Computer Science Student at UMBC">
+<meta property="og:description" content="Real time apps, IoT security, and full stack projects.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Abhinav Ajay","alternateName":"Ak","jobTitle":"Computer Science Student","affiliation":{"@type":"CollegeOrUniversity","name":"University of Maryland, Baltimore County"},"sameAs":["https://github.com/entherman4"]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#16052A; --panel:#1E0A38; --ink:#FFF1F8; --soft:#C9AEE6; --line:#5B2A8A;
+  --signal:#FF2E93; --signal-ink:#16052A; --hold:#FFD34D; --cyan:#2EE6D6; --orange:#FF8A2B;
+  --head:"Bowlby One","Arial Black",Impact,sans-serif;
+  --display:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+  color-scheme:dark;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark}}
+:root[data-theme="dark"]{color-scheme:dark}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--display);font-size:1.0625rem;line-height:1.55}
+a{color:var(--cyan)}
+:focus-visible{outline:3px solid var(--cyan);outline-offset:2px}
+.hero{position:relative;overflow:hidden;min-height:30rem;background:linear-gradient(180deg,#12041F 0%,#4A0F73 38%,#C42B7F 66%,#FF8A2B 86%,#FFD34D 100%);border-bottom:4px solid var(--cyan)}
+.sun{position:absolute;left:50%;bottom:5.5rem;width:min(30rem,80vw);aspect-ratio:1;transform:translateX(-50%);border-radius:50%;background:linear-gradient(180deg,#FFD34D 0%,#FF5FA2 100%);-webkit-mask:repeating-linear-gradient(180deg,#000 0 14px,transparent 14px 18px) bottom/100% 55% no-repeat,linear-gradient(#000,#000) top/100% 45% no-repeat;mask:repeating-linear-gradient(180deg,#000 0 14px,transparent 14px 18px) bottom/100% 55% no-repeat,linear-gradient(#000,#000) top/100% 45% no-repeat}
+.floor{position:absolute;left:0;right:0;bottom:0;height:5.5rem;background:#12041F;border-top:3px solid var(--signal)}
+.palm{position:absolute;bottom:2.5rem;height:21rem;width:auto;color:#0B0216}
+.palm.l{left:-1rem}.palm.r{right:-1rem;transform:scaleX(-1);height:17rem}
+.wrap{max-width:70rem;margin:0 auto;padding:0 1.25rem}
+.hero .wrap{position:relative;padding-top:3rem;padding-bottom:7rem}
+h1{font-family:var(--head);font-weight:400;font-size:clamp(3.4rem,15vw,9.5rem);line-height:.9;margin:0 0 1rem;color:#fff;text-shadow:5px 5px 0 var(--signal),9px 9px 0 #12041F;letter-spacing:.01em;font-style:italic}
+h1 span{display:block;color:var(--hold)}
+.lede{max-width:33rem;font-size:1.2rem;line-height:1.45;margin:0 0 1.25rem;color:#fff;text-shadow:0 1px 8px #12041F}
+.status{font-family:var(--mono);font-size:.85rem;color:#fff;display:inline-flex;gap:.6rem;align-items:center;margin:0;padding:.35rem .7rem;background:#12041Fcc;border:1px solid var(--cyan)}
+.dot{width:.65rem;height:.65rem;border-radius:50%;background:var(--hold);flex:none}
+.live .dot{background:var(--cyan)}
+.map{position:absolute;right:1.25rem;top:1.5rem;width:5.5rem;aspect-ratio:1;border-radius:50%;border:3px solid var(--cyan);background:conic-gradient(from 0deg,#2EE6D655,transparent 25%),repeating-radial-gradient(circle,transparent 0 12px,#2EE6D633 12px 13px),#12041Fcc}
+.map i{position:absolute;left:50%;top:50%;width:.55rem;height:.55rem;margin:-.28rem;background:var(--signal);border-radius:50%}
+.main{padding:2rem 1.25rem 4rem 4.25rem;max-width:62rem;margin:0 auto}
+.lvl{position:relative;margin:0 0 4.5rem;padding:1.75rem;background:var(--panel);border:3px solid var(--signal);box-shadow:8px 8px 0 var(--cyan);scroll-margin-top:1.5rem}
+.tag{display:inline-block;margin:0 0 .75rem;padding:.05rem .5rem;background:var(--hold);color:var(--paper);font-family:var(--mono);font-size:.85rem}
+h2{font-family:var(--head);font-weight:400;font-size:clamp(1.8rem,4.5vw,2.9rem);line-height:1.05;margin:0 0 1rem;color:#fff;text-shadow:3px 3px 0 var(--signal)}
+h3{font-family:var(--head);font-weight:400;font-size:1.05rem;color:var(--hold);margin:1.5rem 0 .4rem}
+.lvl p{max-width:40rem;margin:0 0 1rem}
+.lvl ul{max-width:40rem;padding-left:1.2rem;margin:0 0 1rem}.lvl li{margin-bottom:.45rem}.lvl li::marker{color:var(--cyan)}
+.chips{display:flex;flex-wrap:wrap;gap:.4rem;margin:1.25rem 0 0;padding:0;list-style:none}
+.chips li{margin:0;padding:.2rem .6rem;border:1px solid var(--cyan);color:var(--cyan);font-family:var(--mono);font-size:.82rem}
+.lvl button,.lvl .btn{font:inherit;font-weight:700;display:inline-block;padding:.65rem 1.1rem;background:var(--signal);color:var(--signal-ink);border:0;cursor:pointer;text-decoration:none}
+.rail{position:fixed;left:.75rem;top:1rem;bottom:1rem;width:2.5rem;z-index:5;pointer-events:none}
+.rail::before{content:"";position:absolute;left:50%;top:0;bottom:0;width:3px;margin-left:-1.5px;background:repeating-linear-gradient(180deg,var(--cyan) 0 8px,transparent 8px 14px)}
+.rail a{position:absolute;left:50%;width:.9rem;height:.9rem;margin:-.45rem 0 0 -.45rem;border-radius:50%;background:var(--paper);border:3px solid var(--cyan);pointer-events:auto}
+.rail a.on{background:var(--signal);border-color:#fff}
+.hero~.rail{display:block}
+#dude{position:absolute;left:50%;top:0;width:2.6rem;margin-left:-1.3rem;transition:none;filter:drop-shadow(2px 2px 0 #12041F)}
+.cue{margin:1.25rem 0 0;font-family:var(--mono);font-size:.85rem;color:#fff}
+footer{margin:0 0 1rem;font-size:.9rem;color:var(--soft);max-width:40rem}
+@media (max-width:40rem){.main{padding-left:3.5rem}.palm{opacity:.6}.map{width:4rem}.lvl{padding:1.25rem}}
+@media (prefers-reduced-motion:no-preference){
+  .map::after{content:"";position:absolute;inset:0;border-radius:50%;background:conic-gradient(from 0deg,transparent 80%,#2EE6D6aa);animation:sweep 3s linear infinite}
+  @keyframes sweep{to{transform:rotate(360deg)}}
+}
+</style>
+</head>
+<body>
+<header class="hero"><div class="sun"></div><svg class="palm l" viewBox="0 0 140 220" fill="none" stroke="currentColor" stroke-linecap="round" aria-hidden="true"><path d="M70 220C66 160 78 120 72 72" stroke-width="7"/><path d="M72 72C45 48 22 52 6 82M72 72C50 62 40 78 34 104M72 72C98 44 122 50 138 80M72 72C94 62 106 78 112 102M72 72C70 50 76 32 90 16M72 72C66 48 56 34 40 22" stroke-width="5"/></svg><svg class="palm r" viewBox="0 0 140 220" fill="none" stroke="currentColor" stroke-linecap="round" aria-hidden="true"><path d="M70 220C66 160 78 120 72 72" stroke-width="7"/><path d="M72 72C45 48 22 52 6 82M72 72C50 62 40 78 34 104M72 72C98 44 122 50 138 80M72 72C94 62 106 78 112 102M72 72C70 50 76 32 90 16M72 72C66 48 56 34 40 22" stroke-width="5"/></svg><div class="floor"></div><div class="map" aria-hidden="true"><i></i></div><div class="wrap"><h1>Abhinav<span>Ajay</span></h1><p class="lede">Call me Ak. I’m a computer science student at UMBC who builds real time systems: IoT brokers, live apps, and tools people use every day. Scroll down and follow the skydiver through each mission.</p><p class="cue"><a href="https://github.com/entherman4">github.com/entherman4</a></p><p class="status" id="status" aria-live="polite"><span class="dot"></span><span id="stxt">Loading ak/portfolio…</span></p></div></header>
+<nav class="rail" id="rail" aria-label="Page progress"><svg id="dude" viewBox="0 0 48 64" aria-hidden="true"><path d="M17 22L4 12M31 22L44 12" stroke="#FF2E93" stroke-width="5" stroke-linecap="round"/><path d="M20 38L13 58M28 38L35 58" stroke="#2EE6D6" stroke-width="5" stroke-linecap="round"/><path d="M15 20h18l-2 19H17z" fill="#FF2E93"/><circle cx="24" cy="11" r="8" fill="#FFD9B8"/><path d="M16 9c2-7 14-7 16 0z" fill="#12041F"/><rect x="16" y="9" width="16" height="5" rx="1" fill="#12041F"/><path d="M10 60h8M30 60h8" stroke="#FFF1F8" stroke-width="3" stroke-linecap="round"/></svg></nav>
+<main class="main" id="story"></main>
+<script>
+var L=[
+{id:"profile",c:"Profile",tag:"Player profile",h:"Who I am",p:["I’m Abhinav Ajay, a junior studying Computer Science (minor in Information Systems) at UMBC with a 3.69 GPA, expected to graduate in May 2028. Everything I like building has data moving live between machines and people: sensors, brokers, parking lots, even Hindi lessons.","I’m looking for a software engineering internship."],s:[["What I work on",["Real time apps and IoT systems","Security, from CTFs to broker authentication","Full stack web with React, Next.js, and Supabase"]]],chips:["Python","TypeScript","JavaScript","Java","C++","SQL","React","Next.js","Supabase","PostgreSQL","MQTT","Git","Linux"]},
+{id:"parksmart",c:"ParkSmart",tag:"In progress, beta",h:"ParkSmart UMBC",p:["A real time parking platform for UMBC’s 14,000+ students. Students report how full a lot is, and everyone else sees it update instantly. It’s in beta now and being deployed with DAMS Lab as part of UMBC’s Smart Campus initiative."],s:[["How it works",["Supabase Realtime pushes lot updates over WebSockets, so nobody refreshes","A PostgreSQL schema I designed, with triggers and Row Level Security policies","A limit of 1 report per user per 5 minutes keeps spam out","Magic link sign in restricted to @umbc.edu addresses","Permit aware filtering that shows the best open spot for your permit"]],["The hard part",["Magic link emails weren’t arriving, and backend changes weren’t showing up on the frontend. I tracked it down through logs, redirects, environment variables, and email provider settings."]]],chips:["React","Next.js","TypeScript","Supabase","PostgreSQL","Vercel"]},
+{id:"broker",c:"Broker",tag:"In progress",h:"MQTT DAP Secure Broker",p:["I extended the open source Mosquitto MQTT broker that carries data across DAMS Lab’s IoT infrastructure, so that data stays secure in transit."],s:[["What I built",["Custom message handling in Python","Authentication and authorization for every connection","Python benchmarks for performance, scalability, and reliability under different loads, while meeting GDPR requirements"]],["Why benchmarks",["Security checks add work to every message, so I measure what they cost as load grows."]],["What’s next",["A standalone Python client library, so other projects can talk to the broker without touching its internals."]]],chips:["Python","MQTT","Mosquitto","Docker"]},
+{id:"lab",c:"DAMS Lab",tag:"Active job",h:"Undergraduate Researcher, DAMS Lab",p:["Since August 2026 I’ve worked on UMBC’s Smart Campus initiative across IoT, privacy, and full stack development, under a professor and a PhD student."],s:[["What I do there",["Research an efficient, GDPR compliant database for IoT, focused on data security and integrity, and contribute to a publication on secure data management","Contribute to a LiDAR line queue counter for Starbucks","Contribute to UMBC Navigator, a Bluetooth beacon indoor navigation app","Led initial development of a smart library system","Support the IoT Testbench, evaluating telemetry across commercial IoT devices","Help design hardware curriculum for SPACES, a new IoT course launching Spring 2027"]]],chips:["IoT","LiDAR","Bluetooth beacons","GDPR","Python"]},
+{id:"sikho",c:"Sikho",tag:"In progress",h:"Sikho, an AI Hindi tutor",p:["A tutor for complete beginners. A 28 item curriculum across three units (vowels, consonants, essential phrases) sits next to a chat tutor that teaches one new idea per reply."],s:[["How it works",["A streaming route on the Anthropic API with input validation and a tutor persona that always shows Devanagari, romanization, and English, and corrects gently","SM 2 spaced repetition, written in TypeScript, schedules when each letter and phrase comes back for review","PostgreSQL with Row Level Security keeps each learner’s progress and chat history private"]]],chips:["Next.js","TypeScript","Supabase","Anthropic API"]},
+{id:"songs",c:"Song Player",tag:"Mission passed",h:"Song Player",p:["A C++ playlist manager for a 500 song catalog, with search, filtering, and playlists."],s:[["Under the hood",["A templated linked list queue written from scratch","Copy constructor and overloaded assignment, so copies are deep and never share memory","Bubble sort for ordering","Checked with Valgrind"]]],chips:["C++","Valgrind"]},
+{id:"more",c:"Other jobs",tag:"Side missions",h:"Other work",p:[],s:[["Handshake, Software Engineer AI Fellow (May to Aug 2026, contract)",["Evaluated AI responses for accuracy, clarity, and policy compliance","Benchmarked frontier labs’ coding agents against production GitHub repos using golden solutions and fail to pass tests"]],["UMBC Cyberdawgs (since Sep 2025)",["Collegiate hackathons and CTFs on network security, cryptography, and penetration testing","Built security tools like vulnerability scanning and threat detection scripts"]],["Tutor (Jun 2024 to Sep 2026)",["One on one Java, Python, and Calculus I and II, with my own lesson plans and coding exercises"]]],chips:[]},
+{id:"contact",c:"Contact",tag:"Line open",h:"Say hello",p:["I’m looking for a software engineering internship. Write me a message and it opens in your email app."],s:[],chips:[],form:true}
+];
+function mk(t,x,c){var e=document.createElement(t);if(x)e.textContent=x;if(c)e.className=c;return e}
+var st=document.getElementById("story"),rail=document.getElementById("rail"),dude=document.getElementById("dude"),dots=[];
+L.forEach(function(v){
+  var sec=mk("section",null,"lvl");sec.id=v.id;sec.appendChild(mk("span",v.tag,"tag"));sec.appendChild(mk("h2",v.h));
+  v.p.forEach(function(x){sec.appendChild(mk("p",x))});
+  v.s.forEach(function(b){sec.appendChild(mk("h3",b[0]));var u=mk("ul");b[1].forEach(function(x){u.appendChild(mk("li",x))});sec.appendChild(u)});
+  if(v.chips.length){var cu=mk("ul",null,"chips");v.chips.forEach(function(x){cu.appendChild(mk("li",x))});sec.appendChild(cu)}
+  if(v.form){var ta=mk("textarea");ta.setAttribute("aria-label","Message");ta.rows=5;ta.placeholder="Your name, and what you’d like to talk about";ta.style.cssText="width:100%;max-width:34rem;display:block;margin:0 0 .75rem;font:inherit;padding:.75rem;background:#12041F;color:#FFF1F8;border:2px solid #2EE6D6";var b=mk("button","Send message");b.onclick=function(){location.href="mailto:entherman4@gmail.com?subject="+encodeURIComponent("Hello from your portfolio")+"&body="+encodeURIComponent(ta.value)};sec.appendChild(ta);sec.appendChild(b);var g=mk("a","GitHub profile","btn");g.href="https://github.com/entherman4";g.style.marginLeft=".75rem";sec.appendChild(g)}
+  st.appendChild(sec);
+  var a=mk("a");a.href="#"+v.id;a.title=v.c;a.setAttribute("aria-label",v.c);rail.appendChild(a);dots.push(a);
+});
+var ft=mk("footer","Abhinav Ajay, B.S. Computer Science, UMBC. Based in Pikesville, Maryland. Styled after neon 1980s Miami; not affiliated with any game or studio.");st.appendChild(ft);
+var secs=[].slice.call(st.querySelectorAll(".lvl"));
+function layout(){
+  var h=rail.clientHeight-40,max=document.documentElement.scrollHeight-innerHeight,y0=document.querySelector(".hero").offsetHeight;
+  secs.forEach(function(s,i){var mid=s.offsetTop+s.offsetHeight/2-innerHeight/2;var p=Math.min(1,Math.max(0,mid/max));dots[i].style.top=(20+p*h)+"px"});
+  tick();
+}
+function tick(){
+  var h=rail.clientHeight-40,max=document.documentElement.scrollHeight-innerHeight,p=max>0?Math.min(1,scrollY/max):0;
+  dude.style.top=(p*h)+"px";dude.style.transform="rotate("+(Math.sin(p*14)*10)+"deg)";
+  var cur=0;secs.forEach(function(s,i){if(s.getBoundingClientRect().top<innerHeight*.5)cur=i});
+  dots.forEach(function(d,i){d.className=i===cur?"on":""});
+}
+addEventListener("scroll",tick,{passive:true});addEventListener("resize",layout);addEventListener("load",layout);layout();
+var sx=document.getElementById("stxt");setTimeout(function(){document.getElementById("status").classList.add("live");sx.textContent="Connected. Scroll to start the run."},900);
+</script>
+</body>
+</html>
